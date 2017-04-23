@@ -55,6 +55,9 @@ a:hover {
 }
 .content .products {
   clear: both;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .content .product {
   float: left;
