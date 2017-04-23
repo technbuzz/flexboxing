@@ -60,13 +60,16 @@ a:hover {
   flex-wrap: wrap;
 }
 .content .product {
-  float: left;
-  width: 300px;
+  flex-basis: 22%;
   border: 1px dashed #ccc;
   padding: 2%;
 }
 .content .product .product-details {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
 }
 .content .product .product-details h2 {
   font-size: 1.2em;
@@ -109,7 +112,7 @@ a:hover {
 }
 @media only screen and (max-width: 690px) {
   .content .product {
-    width: 44%;
+    flex-basis: 44%;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -125,12 +128,10 @@ a:hover {
     margin-left: 0;
   }
   .content header nav.main-nav {
-    float: none;
     font-size: 0.8em;
   }
   .content .product {
-    float: none;
-    width: 90%;
+    flex-basis: 90%;
     margin: 0 auto;
   }
 }
