@@ -59,10 +59,16 @@ a:hover {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+
 .content .product {
   flex-basis: 22%;
   border: 1px dashed #ccc;
   padding: 2%;
+}
+
+.content .product:last-child{
+  flex-grow: 2;
 }
 .content .product .product-details {
   text-align: center;
@@ -94,6 +100,17 @@ a:hover {
 .content .product .product-details button:hover {
   background-color: #000000;
 }
+
+.content .featured{
+  order: -1;
+  flex-basis: 44%;
+}
+
+.content .featured .product-details button{
+  align-self: center;
+  background: green;
+}
+
 @media only screen and (max-width: 800px) {
   .content {
     text-align: center;
