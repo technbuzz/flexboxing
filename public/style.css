@@ -62,8 +62,21 @@ a:hover {
   flex-basis: 22%;
   border: 1px dashed #ccc;
   padding: 2%;
+  flex-grow:1;
+}
+.content .featured{
+  order: -1;
+  flex-basis: 40%;
+}
+
+.content .product:last-child{
+  flex-grow: 2;
 }
 .content .product .product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 .content .product .product-details h2 {
@@ -80,15 +93,21 @@ a:hover {
   font-size: 1em;
 }
 .content .product .product-details button {
+  align-self: stretch;
   margin: 1em;
   background-color: #333333;
   border: 1px solid #ddd;
   padding: 5%;
   color: #fff;
 }
+
+.content .featured .product-details button{
+  align-self: center;
+}
 .content .product .product-details button:hover {
   background-color: #000000;
 }
+
 @media only screen and (max-width: 800px) {
   .content {
     text-align: center;
